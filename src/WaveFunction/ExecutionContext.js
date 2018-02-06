@@ -9,11 +9,11 @@ export default class ExecutionContext {
         this.formatter = formatter;
     }
 
-    execute(assertionLibrary) {
+    execute() {
         let thisRunner = this;
         let TestSuite = this.TestSuite;
         let testCases = Reflect.getMetadata('wavefunction.testsuite.testcases', TestSuite) || [];
-        let testSuite = new TestSuite(assertionLibrary);
+        let testSuite = new TestSuite();
 
         describe(thisRunner.resolveTestSuiteDescription(TestSuite), function () {
 
