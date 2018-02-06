@@ -1,7 +1,7 @@
 /**
  * An abstract TestSuite
  */
-export class TestSuite {
+export default class TestSuite {
 
     /**
      * The before hook
