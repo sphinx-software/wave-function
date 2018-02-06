@@ -1,6 +1,6 @@
 {
   "name": "@sphinx-software/wave-function",
-  "version": "0.0.4",
+  "version": "dev",
   "description": "A testing framework for Fusion.",
   "main": "index.js",
   "scripts": {
