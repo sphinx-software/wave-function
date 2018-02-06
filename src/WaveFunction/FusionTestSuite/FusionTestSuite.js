@@ -1,4 +1,4 @@
-import {TestSuite} from "../TestSuite";
+import TestSuite from "../TestSuite";
 import fusion from "Fusion/Fusion";
 import Container from "@sphinx-software/container";
 import {EventEmitter} from "events";
