@@ -1,23 +1,13 @@
 import {testCase, testSuite} from "../src/WaveFunction/decorators";
-import FusionTestSuite from "../src/WaveFunction/FusionTestSuite/FusionTestSuite";
 import {assert} from "chai";
+import TestSuite from "../src/WaveFunction/TestSuite";
 
 @testSuite()
-export default class MyTestSuite extends FusionTestSuite {
+export default class MyTestSuite extends TestSuite {
 
     @testCase()
-    async testTrueIsOk(context) {
+    async testTrueIsOk() {
         assert(true);
     }
 
-    @testCase()
-    async testFalseIsOk(context) {
-        assert(true);
-    }
-
-    manifest() {
-    }
-
-    config() {
-    }
 }
