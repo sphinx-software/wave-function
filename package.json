@@ -4,7 +4,8 @@
   "description": "A testing framework for Fusion.",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/.bin/mocha --exit test/index.js"
+    "test": "node node_modules/.bin/mocha --exit test/index.js",
+    "build": "npm run test && node node_modules/.bin/babel src/ -d build/"
   },
   "author": "",
   "license": "MIT",
