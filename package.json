@@ -7,7 +7,7 @@
     "test": "node node_modules/.bin/mocha --exit test/index.js",
     "build": "npm run test && node node_modules/.bin/babel src/ -d build/"
   },
-  "author": "",
+  "author": "rikky <son.levuthai@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "@sphinx-software/container": "^0.1.13",
