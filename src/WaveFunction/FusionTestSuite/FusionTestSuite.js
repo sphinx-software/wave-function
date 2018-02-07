@@ -32,7 +32,12 @@ export default class FusionTestSuite extends TestSuite {
 
         await this.fusionActivating(context);
 
-        this.container = await fusion.activate(this.config(), this.container);
+        this.container = await fusion.activate(
+            this.config(),
+            this.container,
+            () => this.fusionRegistered(context),
+            () => this.fusionBooted(context)
+        );
 
         await this.fusionActivated(context);
     }
@@ -85,6 +90,28 @@ export default class FusionTestSuite extends TestSuite {
      * @return {Promise<void>}
      */
     async fusionActivating(context) {
+
+    }
+
+    /**
+     * Hook when service providers are registered
+     *
+     * @protected
+     * @param context
+     * @return {Promise<void>}
+     */
+    async fusionRegistered(context) {
+
+    }
+
+    /**
+     * Hook when service providers are booted
+     *
+     * @protected
+     * @param context
+     * @return {Promise<void>}
+     */
+    async fusionBooted(context) {
 
     }
 
